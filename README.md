@@ -52,6 +52,17 @@ The bonus is a plus that helps us know you better and increments your final scor
 - Automated Test for Fifth AC: `10` points.
 - The app is responsive: `20` points.
 
+#### Submitting the deliverables
+For submitting your work, you should follow these steps:
+1. Fill [the form](https://forms.gle/7Jz2uXMFYXfcU2428) to submit your project
+2. Projects must be forked from the [baseline repo](https://github.com/wizelineacademy/react-apprenticeship-capstone-2)
+3. Please make sure that your forked repo is public
+4. Submit your deliverables as a **Pull Request (PR)** in a new branch derived from master/main on your own GitHub account
+5. Add your mentor as reviewer of your PR
+6. Remember to submit your deliverables on time to be successfully evaluated
+
+Remember to always use your creativity!
+
 ## Questions?
 
 If you have any questions about this challenge, feel free to ask on the Slack channel ASAP.
