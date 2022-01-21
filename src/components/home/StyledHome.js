@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHome = styled.div`
   display: flex;
-  padding: 60px;
+  padding: 30px;
   margin: 0 auto;
   max-height: 100%;
   align-items: center;
