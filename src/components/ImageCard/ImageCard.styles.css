@@ -1,0 +1,9 @@
+img {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 750px;
+  width: 1200px;
+  align-self: center;
+  border-radius: 30px;
+}

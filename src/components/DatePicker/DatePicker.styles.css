@@ -1,0 +1,19 @@
+input {
+  width: 150px;
+  margin-right: 10px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.find-image {
+  align-self: center;
+}
+
+button {
+  background-color: rgb(0, 160, 252);
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+}
