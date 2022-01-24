@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const StyledHome = styled.div`
   display: flex;
-  padding: 30px;
+  padding: 2%;
   margin: 0 auto;
   max-height: 100%;
   align-items: center;
 
   img {
-    width: 50%;
-    margin-right: 50px;
-    object-fit: contain;
-    max-height: 80vh;
+    max-width: 100%;
+    margin-right: 3%;
+    max-height: 100%;
   }
 
   h1 {
@@ -21,7 +20,7 @@ export const StyledHome = styled.div`
 
   h3 {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 7%;
   }
 
   p {
@@ -31,10 +30,11 @@ export const StyledHome = styled.div`
   @media (max-width: 1280px) {
     display: block;
 
-    img {
+      img {
       width: 100%;
       margin-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: 5%;
+    }
     }
   }
 `;

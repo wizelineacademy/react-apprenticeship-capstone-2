@@ -3,16 +3,18 @@ import axios from "axios";
 import { StyledHome } from "./StyledHome";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import useFetch from "../../utils/hooks/useFetch";
 
 export default function Home() {
+  // const date = new Date();
+  // const { startDate, data, loading, error, setStartDate } = useFetch(date);
   const [startDate, setStartDate] = useState(new Date());
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const url =
     "https://api.nasa.gov/planetary/apod?api_key=htUR37htxLa2uzoId9iBRClwvNfUI6WtjIse14TA&date=";
-  //   const API_KEY = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,30 +31,27 @@ export default function Home() {
     fetchData();
   }, [startDate]);
 
-  if (!data) {
-    return <p>Sorry, there is no data</p>;
-  }
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
   if (error) {
-    return <p>There was an error, please try again</p>;
+    return <p>There was an error, please try again.</p>;
   }
 
   return (
     <StyledHome>
-      <img src={data.url} alt={data.title} className="photo" />
-      <div>
-        <h1>{data.title}</h1>
-        <h3>{data.date}</h3>
-        <p className="explanation">{data.explanation}</p>
-        <ReactDatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
-        />
-      </div>
+      {loading ? <p>Loading...</p> : <img src={data.url} alt={data.title} />}
+      {data && !loading && (
+        <div>
+          <h1 data-testid="title">{data.title}</h1>
+          <h3 data-testid="date">{data.date}</h3>
+          <h4 data-testid="copyright">{data.copyright}</h4>
+          <p data-testid="explanation">{data.explanation}</p>
+          <h4>Select a past date:</h4>
+          <ReactDatePicker
+            maxDate={new Date()}
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
+        </div>
+      )}
     </StyledHome>
   );
 }
