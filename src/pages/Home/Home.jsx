@@ -10,10 +10,6 @@ const Home = () => {
     const url = `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`
     const response = useFetch(url);
 
-    const nasa = response.data;
-    console.log('NASA', nasa);
-    console.log('url', url);
-
     const handleDate = (e) => {
         e.preventDefault();
         setDate(e.target.value);
@@ -30,7 +26,8 @@ const Home = () => {
       {
           date ?  <NasaContent type={media_type} url={urlContent} /> : null
       }
-     
+      <p>{title}</p>
+      <p>{explanation}</p>
     </div>
   );
 }
