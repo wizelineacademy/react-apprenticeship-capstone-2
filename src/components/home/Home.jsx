@@ -3,7 +3,7 @@ import axios from "axios";
 import { StyledHome } from "./StyledHome";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import useFetch from "../../utils/hooks/useFetch";
+// import useFetch from "../../utils/hooks/useFetch";
 
 export default function Home() {
   // const date = new Date();
