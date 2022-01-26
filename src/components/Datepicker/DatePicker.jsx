@@ -1,4 +1,5 @@
 import React from 'react';
+import { PickerContainer } from './DatePicker.styles';
 
 const DatePicker = ({ handleDate, date}) => {
     const today = new Date();
@@ -7,7 +8,8 @@ const DatePicker = ({ handleDate, date}) => {
     if(today.getMonth() === 0) month = today.getMonth() + '1';
     const max = today.getFullYear()+'-'+ month +'-'+today.getDate();
     return (
-        <div>
+        <PickerContainer>
+            <p>select a date:</p>
             <input
                 data-testid="date-input" 
                 type="date"
@@ -17,7 +19,7 @@ const DatePicker = ({ handleDate, date}) => {
                 min="1995-06-16"
                 max={max}
             />
-        </div>
+        </PickerContainer>
     );
 }
 

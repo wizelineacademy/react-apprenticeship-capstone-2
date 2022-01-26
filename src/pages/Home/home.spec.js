@@ -15,7 +15,7 @@ const mock =  {
 describe("test home page", () => {
     test('home is render', () => {
         render(<Home />);
-        const title = screen.findByText('Hello choose a date to se a nasa pic')
+        const title = screen.findByText('See the universe!')
         expect(title).toBeTruthy();
     });
 
