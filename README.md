@@ -9,7 +9,10 @@ For this challenge, you will create an awesome React App which fetches the "Pict
   - Title
   - Date Picker
   - Main section with the image
-- **Requisites**: Consider the following when developing the app:
+
+### Requisites
+
+Consider the following when developing the app:
   - Don't use UI Libraries. You have to build your styles. You can use styled components such as SASS, LESS, or CSS. You are free to use the approach that makes sense to you.
   - Fetch API Calls from the `NASA APOD` using your API KEY.
   - Publish your app using free services such as Github pages, Netflify, or Heroku. 
@@ -18,7 +21,7 @@ For this challenge, you will create an awesome React App which fetches the "Pict
   - Use functional components and React Hooks as possible.
 - **Resources**: [NASA APIs](https://api.nasa.gov/)
 
-## Getting Started
+### Completing the Challenge
 Follow these steps to complete the challenge:
 1. Create a new branch with the name **challenge-2** from this repository.
 1. Complete all the Acceptance Criteria (AC) described in the following section.
@@ -36,7 +39,7 @@ Follow these steps to complete the challenge:
 
 ### Bonus
 
-The bonus is a plus that helps us know you better and increments your final score.
+The bonus is a plus that helps us know you better and increments your final score. Consider the following: 
 
 - **Automated Test for Second AC:** `10` points.
 - **Automated Test for Third AC**: `10` points.
